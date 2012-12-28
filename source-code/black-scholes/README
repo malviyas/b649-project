@@ -1,0 +1,12 @@
+One versions of Balck-Scholes:
+
+1) Balck-Scholes host-device version in which the device gets converted to ptx and host loads the ptx to execute 
+   the kernel part parallely for specified blockSize and number of threads. 
+   Files: 
+	a) black-scholes.cpp
+ 	b) black-scholes.kernel.cpp
+   Pre-requisite:
+	llvm to ptx backend set up: https://github.com/jholewinski/llvm-ptx-samples
+
+
+Note: This version wasn't successfully tested as the ptx conversion was not correct

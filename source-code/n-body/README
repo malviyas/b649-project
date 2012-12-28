@@ -1,0 +1,17 @@
+Five versions of N-Body:
+
+1) N-Body host-device version in which the device gets converted to ptx and host loads the ptx to execute 
+   the kernel part parallely for specified blockSize and number of threads. 
+   Files: 
+	a) n-body.cpp
+ 	b) n-body.kernel.cpp
+   Pre-requisite:
+	llvm to ptx backend set up: https://github.com/jholewinski/llvm-ptx-samples
+
+2) N-Body cuda code used to verify the result for the above version
+
+3) N-Body sequential Javascript
+
+4) N-Body JS-GPU version in which the kernel's ptx code is offloaded to the JS-GPU hybrid system
+
+5) N-Body JS-GPU version in which the kernel function will be internally translated to ptx by the JS-GPU hybird system
